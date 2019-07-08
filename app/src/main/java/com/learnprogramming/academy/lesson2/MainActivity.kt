@@ -7,39 +7,45 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
+import com.learnprogramming.academy.lesson2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     /**
      *  Widget Declarations
      */
-    private val _edtView_NickName by lazy {findViewById<EditText>(R.id.edtTxt_Nicname)}
-    private val _txtView_NickName by lazy {findViewById<TextView>(R.id.txtView_Nickname)}
-    private val _btnDone by lazy {findViewById<Button>(R.id.btn_Nickname_Done)}
+//    private val _edtView_NickName by lazy { findViewById<EditText>(R.id.edtTxt_Nicname) }
+//    private val _txtView_NickName by lazy { findViewById<TextView>(R.id.txtView_Nickname) }
+//    private val _btnDone by lazy { findViewById<Button>(R.id.btn_Nickname_Done) }
+    private lateinit var _Binding: ActivityMainBinding
 
     /**
      *  Variable Declarations
      */
-    private var _Nickname:String = ""
+    private var _Nickname: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        _btnDone.setOnClickListener {
+        _Binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        _Binding.btnNicknameDone.setOnClickListener {
             _EnterNickname()
         }
 
     }
 
     private fun _EnterNickname() {
-        _Nickname = _edtView_NickName?.text.toString()
-        if(_Nickname!="")
-        {
-            Toast.makeText(this,"Nickname: $_Nickname Created",Toast.LENGTH_SHORT).show()
-            _edtView_NickName.visibility = View.GONE
-            _btnDone.visibility = View.GONE
-            _txtView_NickName.visibility = TextView.VISIBLE
-            _txtView_NickName.text = _Nickname
+
+        _Nickname = _Binding.edtTxtNicname.text.toString()
+        if (_Nickname != "") {
+            Toast.makeText(this, "Nickname: $_Nickname Created", Toast.LENGTH_SHORT).show()
+            _Binding.apply {
+                edtTxtNicname.visibility = View.GONE
+                btnNicknameDone.visibility = View.GONE
+                txtViewNickname.visibility = View.VISIBLE
+                txtViewNickname.text = _Nickname
+            }
         }
+
     }
 }

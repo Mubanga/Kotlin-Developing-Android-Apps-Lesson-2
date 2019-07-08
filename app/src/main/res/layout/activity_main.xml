@@ -1,68 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content"
-        tools:context=".MainActivity">
-    <TextView
-            android:text="@string/mehrunes_dagon"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
             android:layout_width="match_parent"
+            android:orientation="vertical"
             android:layout_height="wrap_content"
-            android:id="@+id/txtView_name"
-            android:textAlignment="center"
-            style="@style/NameStyle"/>
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/edtTxt_Nicname" android:hint="@string/nickname_hint_edt_text" style="@style/NameStyle"
-            android:textAlignment="center"/>
-    <Button
-            android:text="@string/done_nickname_button"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/roboto"
-            android:layout_marginTop="@dimen/layout_margin"
-            android:layout_height="wrap_content" android:id="@+id/btn_Nickname_Done"/>
-    <TextView
-            android:text=""
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtView_Nickname"
-            tools:visibility="visible"
-            tools:text=" {Display Nickname Here} "
-            android:layout_gravity="center_horizontal"
-            android:visibility="gone" style="@style/NameStyle"/>
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" app:srcCompat="@android:drawable/btn_star_big_on"
-            android:id="@+id/img_star_big" android:contentDescription="@string/yellow_star_content_description"
-            android:layout_marginTop="@dimen/layout_margin"/>
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:visibility="visible"
-            android:verticalScrollbarPosition="defaultPosition">
-        <LinearLayout
-                android:orientation="vertical"
+            tools:context=".MainActivity">
+        <TextView
+                android:text="@string/mehrunes_dagon"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <ImageView
+                android:layout_height="wrap_content"
+                android:id="@+id/txtView_name"
+                android:textAlignment="center"
+                style="@style/NameStyle"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edtTxt_Nicname" android:hint="@string/nickname_hint_edt_text" style="@style/NameStyle"
+                android:textAlignment="center"/>
+        <Button
+                android:text="@string/done_nickname_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_height="wrap_content" android:id="@+id/btn_Nickname_Done"/>
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtView_Nickname"
+                tools:visibility="visible"
+                tools:text=" {Display Nickname Here} "
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" style="@style/NameStyle"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/img_star_big" android:contentDescription="@string/yellow_star_content_description"
+                android:layout_marginTop="@dimen/layout_margin"/>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:visibility="visible"
+                android:verticalScrollbarPosition="defaultPosition">
+            <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_oblivion_black"
-                    android:id="@+id/img_oblivion" android:layout_marginTop="@dimen/layout_margin"/>
-            <TextView
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/ic_oblivion_black"
+                        android:id="@+id/img_oblivion" android:layout_marginTop="@dimen/layout_margin"/>
+                <TextView
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/txtView_Bio"
-                    style="@style/NameStyle"
-                    android:text="@string/bio_mehrunes_dagon"
-                    android:paddingStart="@dimen/padding_horizontal"
-                    android:paddingEnd="@dimen/padding_horizontal"/>
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtView_Bio"
+                        style="@style/NameStyle"
+                        android:text="@string/bio_mehrunes_dagon"
+                        android:paddingStart="@dimen/padding_horizontal"
+                        android:paddingEnd="@dimen/padding_horizontal"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
