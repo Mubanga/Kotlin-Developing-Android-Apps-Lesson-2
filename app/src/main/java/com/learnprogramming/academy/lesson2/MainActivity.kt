@@ -25,9 +25,12 @@ class MainActivity : AppCompatActivity() {
      */
     private var _Nickname: String = ""
 
+    private val _ProfileNames:ProfileName = ProfileName("Mehrunes Dagon")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _Binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        _Binding.profileName = _ProfileNames
         _Binding.btnNicknameDone.setOnClickListener {
             _EnterNickname()
         }
@@ -39,11 +42,14 @@ class MainActivity : AppCompatActivity() {
         _Nickname = _Binding.edtTxtNicname.text.toString()
         if (_Nickname != "") {
             Toast.makeText(this, "Nickname: $_Nickname Created", Toast.LENGTH_SHORT).show()
+            _ProfileNames.NickName = _Binding.edtTxtNicname.text.toString()
             _Binding.apply {
+                txtViewNickname?.text = edtTxtNicname.text
+                invalidateAll()
                 edtTxtNicname.visibility = View.GONE
                 btnNicknameDone.visibility = View.GONE
                 txtViewNickname.visibility = View.VISIBLE
-                txtViewNickname.text = _Nickname
+
             }
         }
 

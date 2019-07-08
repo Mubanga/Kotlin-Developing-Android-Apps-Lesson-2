@@ -2,13 +2,19 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="ProfileName"
+                  type="com.learnprogramming.academy.lesson2.ProfileName"/>
+    </data>
     <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content"
             tools:context=".MainActivity">
         <TextView
-                android:text="@string/mehrunes_dagon"
+                android:text="@={ProfileName.name}"
+                tools:text="{Display Name Here}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtView_name"
@@ -30,7 +36,7 @@
                 android:layout_marginTop="@dimen/layout_margin"
                 android:layout_height="wrap_content" android:id="@+id/btn_Nickname_Done"/>
         <TextView
-                android:text=""
+                android:text="@={ProfileName.nickName}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtView_Nickname"
