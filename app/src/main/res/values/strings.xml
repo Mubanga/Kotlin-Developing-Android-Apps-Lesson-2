@@ -2,23 +2,21 @@
     <string name="app_name">About Me</string>
     <string name="mehrunes_dagon">Mehrunes Dagon</string>
     <string name="yellow_star_content_description">Yellow Star</string>
-    <string name="bio_mehrunes_dagon">Mehrunes Dagon\'s spheres are destruction, change, revolution, energy, and
-        ambition. Mehrunes Dagon is the foe of all mortal races, and has attempted to conquer the physical world Nirn
-        many times. The common reasoning behind his many plots is his belief that Tamriel is in fact a plane of Oblivion
-        which is rightly his. He constantly invaded Tamriel relentlessly from the First Era onward. The most famous of
-        Dagon\'s invasions of Morrowind is certainly the attack on the capital city of Mournhold at the end of the First
-        Era.[1] Dagon was defeated by the god-like Almalexia and Sotha Sil, but not before he destroyed the entire city
-        and devoured its populace. Mehrunes Dagon was also behind the destruction of Ald Sotha, where he destroyed House
-        Sotha. Some time in the early Third Era, Mehrunes Dagon was defeated by the sorcerer Chimere Graegyn. Dagon
-        cursed Chimere by twisting the terms of a pact between the two.[2] During the Imperial Simulacrum, in the years
-        3E 389-3E 399, Lord Dagon conspired with Uriel Septim VII\'s power hungry Battlemage Jagar Tharn to imprison the
-        Emperor in Dagon\'s plane of Oblivion while Tharn assumed the Emperor\'s likeness and ruled in his place.
-        Further, Dagon assisted Tharn by attacking the Imperial Battle College in the Battlespire. This attempt at
-        taking over Tamriel was stopped by a mere mortal. Brooding over his many defeats, Dagon eventually came up with
-        his next attempt to conquer Tamriel. This attempt was to become known as the Oblivion Crisis. He had his Mythic
-        Dawn cultists assassinate the Emperor and all of his heirs, but one was unknown, and survived. The heir, the
-        Blades, and the Hero of Kvatch continually defeated him until the assault on the Imperial City, where Dagon was
-        defeated and banished back to Oblivion by Akatosh himself.
+    <string name="bio_mehrunes_dagon">
+        Mehrunes Dagon\'s spheres are destruction, change, revolution, energy, and  ambition.Mehrunes Dagon is the foe of all mortal races, and has attempted to conquer the physical world Nirn many times.The common reasoning behind his many plots is his belief that Tamriel is in fact a plane of Oblivion
+        which is rightly his. He constantly invaded Tamriel relentlessly from the First Era onward.\n\n
+
+        The most famous of Dagon\'s invasions of Morrowind is certainly the attack on the capital city of Mournhold at the end of the First
+        Era[1].Dagon was defeated by the god-like Almalexia and Sotha Sil, but not before he destroyed the entire city and devoured its populace. Mehrunes Dagon was also behind the destruction of Ald Sotha, where he destroyed House
+        Sotha. Some time in the early Third Era, Mehrunes Dagon was defeated by the sorcerer Chimere Graegyn.\n\n
+
+        Dagon cursed Chimere by twisting the terms of a pact between the two.[2] During the Imperial Simulacrum, in the years3E 389-3E 399, Lord Dagon conspired with Uriel Septim VII\'s power hungry Battlemage Jagar Tharn to imprison the
+        Emperor in Dagon\'s plane of Oblivion while Tharn assumed the Emperor\'s likeness and ruled in his place.\n\n
+
+        Further, Dagon assisted Tharn by attacking the Imperial Battle College in the Battlespire. This attempt at taking over Tamriel was stopped by a mere mortal. Brooding over his many defeats, Dagon eventually came up with
+        his next attempt to conquer Tamriel. This attempt was to become known as the Oblivion Crisis. He had his Mythic Dawn cultists assassinate the Emperor and all of his heirs, but one was unknown, and survived. The heir, the
+        Blades, and the Hero of Kvatch continually defeated him until the assault on the Imperial City, where Dagon was defeated and banished back to Oblivion by Akatosh himself.
     </string>
     <string name="nickname_hint_edt_text">Enter Nickname Here</string>
+    <string name="done_nickname_button">Done</string>
 </resources>
