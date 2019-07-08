@@ -20,10 +20,25 @@
             android:layout_marginTop="@dimen/layout_margin"/>
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <TextView
-                android:text="TextView"
+            android:layout_height="match_parent" android:visibility="visible"
+            android:verticalScrollbarPosition="defaultPosition">
+        <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/txtView_Bio" style="@style/NameStyle"/>
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/talos_kneel"
+                    android:id="@+id/img_talos_kneel" android:layout_marginTop="@dimen/layout_margin"/>
+            <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtView_Bio"
+                    style="@style/NameStyle"
+                    android:text="@string/bio_mehrunes_dagon"
+                    android:paddingStart="@dimen/padding_horizontal"
+                    android:paddingEnd="@dimen/padding_horizontal"/>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>
